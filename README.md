@@ -27,9 +27,3 @@ Ouvrez http://localhost:3000 pour l'afficher dans le navigateur. La page se rech
 
 Ouvrez le dossier du projet et accédez à `/src/components/`. <br/>
 Vous y trouverez tous les composants utilisés et vous pourrez modifier vos informations en conséquence.
-
-### Show your support
-
-Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
