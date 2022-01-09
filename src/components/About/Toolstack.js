@@ -4,31 +4,31 @@ import {
   SiVisualstudiocode,
   SiFilezilla,
   SiPostman,
-  SiHeroku,
   SiEclipseide
 } from "react-icons/si";
 import {
   FaSourcetree
 } from "react-icons/fa";
+import TooltipSkills from "./Tooltip";
 
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+      <TooltipSkills text="Visual Studio Code" icon={<SiVisualstudiocode />}></TooltipSkills>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiEclipseide />
+      <TooltipSkills text="Eclipse" icon={<SiEclipseide />}></TooltipSkills>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+      <TooltipSkills text="Postman" icon={<SiPostman />}></TooltipSkills>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFilezilla/>
+      <TooltipSkills text="Filezilla" icon={<SiFilezilla />}></TooltipSkills>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaSourcetree />
+      <TooltipSkills text="SourceTree" icon={<FaSourcetree />}></TooltipSkills>
       </Col>
     </Row>
   );

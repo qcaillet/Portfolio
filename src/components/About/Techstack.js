@@ -13,8 +13,8 @@ import {
 
 import { FaEthereum } from "react-icons/fa";
 import { SiDocker } from "react-icons/si";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
+import TooltipSkills from "./Tooltip";
 
 const renderTooltip = (props) => <Tooltip {...props}>Java</Tooltip>;
 
@@ -22,36 +22,43 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <OverlayTrigger placement="right" overlay={renderTooltip}>
-          <DiJava />
-        </OverlayTrigger>
+        <TooltipSkills text="Java" icon={<DiJava />}></TooltipSkills>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <TooltipSkills
+          text="Javascript"
+          icon={<DiJavascript1 />}
+        ></TooltipSkills>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <TooltipSkills text="NodeJs" icon={<DiNodejs />}></TooltipSkills>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <TooltipSkills text="React" icon={<DiReact />}></TooltipSkills>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMysql />
+        <TooltipSkills text="MySql" icon={<DiMysql />}></TooltipSkills>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <TooltipSkills text="Git" icon={<DiGit />}></TooltipSkills>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiLess />
+        <TooltipSkills text="Less" icon={<DiLess />}></TooltipSkills>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiDocker />
+        <TooltipSkills text="Docker" icon={<SiDocker />}></TooltipSkills>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaEthereum />
+        <TooltipSkills
+          text="Etherum/Solidity"
+          icon={<FaEthereum />}
+        ></TooltipSkills>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiScrum />
+        <TooltipSkills
+          text="Méthodologie Scrum"
+          icon={<DiScrum />}
+        ></TooltipSkills>
       </Col>
     </Row>
   );
