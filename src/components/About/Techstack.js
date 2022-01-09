@@ -16,8 +16,6 @@ import { SiDocker } from "react-icons/si";
 import Tooltip from "react-bootstrap/Tooltip";
 import TooltipSkills from "./Tooltip";
 
-const renderTooltip = (props) => <Tooltip {...props}>Java</Tooltip>;
-
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
