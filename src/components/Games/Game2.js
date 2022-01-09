@@ -1,9 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
-import Button from "react-bootstrap/Button";
-import gameCards from "./GameCards";
 
 import { MdOutlineExplore } from "react-icons/md";
 

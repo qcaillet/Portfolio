@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Type from "../Games/Type";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import homeLogo from "../../Assets/game1.png";
-import Game2 from "./Game2";
-import GameCards from "./GameCards";
 import TypeComming from "./TypeComing";
 
 function Games() {

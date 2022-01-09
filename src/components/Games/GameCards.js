@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { Form, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import { Form} from "react-bootstrap";
 
 function GamesCards(props) {
   return (

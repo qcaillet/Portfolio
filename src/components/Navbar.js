@@ -5,7 +5,6 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { IoLogoGameControllerB } from "react-icons/io";
 import {
-  AiOutlineFundProjectionScreen,
   AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
