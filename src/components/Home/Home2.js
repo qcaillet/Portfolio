@@ -20,7 +20,7 @@ function Home2() {
             </h1>
             <p className="home-about-body">
               Depuis adolescent je suis passionné de programmation et tout ce
-              qui touche de près ou de loin a l'informatique.
+              qui touche de près ou de loin à l'informatique.
               <br />
               <br />
               Je maitrise les langages
@@ -30,13 +30,13 @@ function Home2() {
               ainsi que de nombreuses méthodes de chefferie de projet.
               <br />
               <br />
-              J'ai un attrait envers les nouvelles technologie et j'aime tout
+              J'ai un attrait envers les nouvelles technologies et j'aime tout
               particulièrement apprendre de nouvelles choses. Bien que &nbsp;
               <i>
                 <b className="purple">la programmation </b> soit mon domaine de
-                prédilection j'ai depuis ses dernières années un attrait
+                prédilection, j'ai depuis ses dernières années un attrait
                 particulier sur tout ce qui touche à la{" "}
-                <b className="purple"> chefferie de projet et au managment.</b>
+                <b className="purple"> chefferie de projet et au managment</b>.
               </i>
               <br />
               <br />

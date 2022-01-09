@@ -13,12 +13,18 @@ import {
 
 import { FaEthereum } from "react-icons/fa";
 import { SiDocker } from "react-icons/si";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
+
+const renderTooltip = (props) => <Tooltip {...props}>Java</Tooltip>;
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <OverlayTrigger placement="right" overlay={renderTooltip}>
+          <DiJava />
+        </OverlayTrigger>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />

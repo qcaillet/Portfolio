@@ -9,7 +9,7 @@ import {
   AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
-import logo from "../Assets/QC.png"
+// import logo from "../Assets/QC.png"
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {

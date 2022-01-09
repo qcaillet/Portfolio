@@ -12,13 +12,13 @@ function AboutCard() {
             <span className="purple">Caillet Quentin</span>.
             <br />
             Je suis un développeur qui depuis mes dernieres années d'études
-            m'oriente vers de la{" "}
-            <span className="purple">chefferie de projet et du management. </span>
+            s'oriente vers de la{" "}
+            <span className="purple">chefferie de projet et du management</span>.
             La chefferie de projet et le management m'animent depuis bientôt{" "}
-            <span className="purple"> 3 ans. </span>
-            En effet durant c'est 3 dernières années de par mes études que je
-            realise en<span className="purple"> alternance </span>j'ai pu allier
-            chefferie de projet et programmation. L'alternance ma permis de mettre{" "}
+            <span className="purple"> 3 ans</span>.
+            En effet durant ses 3 dernières années de par mes études que je
+            réalise en<span className="purple"> alternance, </span>j'ai pu allier
+            chefferie de projet et programmation. L'alternance ma permit de mêttre{" "}
             toutes les{" "}
             <span className="purple">
               {" "}
@@ -27,10 +27,10 @@ function AboutCard() {
             .
             <br />
             <br />
-            Vous retrouver plus bas mes{" "}
-            <span className="purple"> principaux skills techniques </span> si vous
-            souhaiter en savoir plus au niveau de mes skills en matière de
-            <span className="purple"> management et chefferie de projet </span>
+            Vous retrouverez plus bas mes{" "}
+            <span className="purple"> principaux skills techniques</span>.<br/>
+             Si vous souhaitez en savoir plus au niveau de mes skills en matière de
+            <span className="purple"> management et chefferie de projet</span>,
             je vous propose d'en discuter lors d'un entretien. 
             <br/>
             vous retrouverez
