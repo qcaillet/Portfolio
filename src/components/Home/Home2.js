@@ -16,27 +16,27 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LAISSE <span className="purple"> MOI ME </span> PRESENTE
+              LAISSE <span className="purple"> MOI ME </span> PRÉSENTER
             </h1>
             <p className="home-about-body">
-              Depuis adolescent je suis passioné de programation et tout ce qui touche
-              de pres ou de loin a l'informatique.
+              Depuis adolescent je suis passionné de programmation et tout ce
+              qui touche de près ou de loin a l'informatique.
               <br />
-              <br />Je maitrisse les langage
+              <br />
+              Je maitrise les langages
               <i>
                 <b className="purple"> Javascript and Java. </b>
               </i>
-              ainsi que de nombreuese méthode de cheferie de projet.
+              ainsi que de nombreuses méthodes de chefferie de projet.
               <br />
               <br />
-              J'ai un attrait envers les nouvelles tecchnologie et j'aime tout particulierement
-              apprendre de nouvelle choses bien que  &nbsp;
+              J'ai un attrait envers les nouvelles technologie et j'aime tout
+              particulièrement apprendre de nouvelles choses. Bien que &nbsp;
               <i>
-                <b className="purple">la programmation </b> sois mon domaine 
-                de prelidection j'ai un attrait tout particulier sur ce qui touche a la {" "}
-                <b className="purple">
-                chefferie de projet et au managment.
-                </b>
+                <b className="purple">la programmation </b> soit mon domaine de
+                prédilection j'ai depuis ses dernières années un attrait
+                particulier sur tout ce qui touche à la{" "}
+                <b className="purple"> chefferie de projet et au managment.</b>
               </i>
               <br />
               <br />

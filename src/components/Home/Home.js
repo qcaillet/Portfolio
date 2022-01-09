@@ -18,7 +18,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                Je suis 
+                Je m'appelle
                 <strong className="main-name"> CAILLET QUENTIN</strong>
               </h1>
 
