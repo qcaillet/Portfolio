@@ -1,27 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
-import Home2 from "./Home2";
-import Type from "./Type";
+import Type from "../Games/Type";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import homeLogo from "../../Assets/game.png";
+import Game2 from "./Game2";
+import GameCards from "./GameCards";
 
-function Home() {
+function Games() {
   return (
     <section>
-      <Container fluid className="home-section" id="home">
+      <Container fluid className="game-section" id="home">
         <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Bonjour! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
-              </h1>
-
-              <h1 className="heading-name">
-                Je suis 
-                <strong className="main-name"> CAILLET QUENTIN</strong>
-              </h1>
-
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
@@ -33,9 +26,12 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <Game2 />
+      <Col md={4} className="project-card">
+      <GameCards title="Résulat" description="sdfvsdfvs" link="http://localhost:3001/" />
+      </Col>
     </section>
   );
 }
 
-export default Home;
+export default Games;

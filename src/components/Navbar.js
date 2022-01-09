@@ -5,11 +5,11 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { IoLogoGameControllerB } from "react-icons/io";
 import {
-  AiOutlineHome,
   AiOutlineFundProjectionScreen,
+  AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
-
+import logo from "../Assets/QC.png"
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -90,9 +90,9 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://blogs.soumya-jit.tech/"
-                target="_blank"
-                rel="noreferrer"
+                 as={Link}
+                 to="/games"
+                 onClick={() => updateExpanded(false)}
               >
                 <IoLogoGameControllerB style={{ marginBottom: "2px" }} /> Games
               </Nav.Link>

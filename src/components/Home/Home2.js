@@ -26,30 +26,20 @@ function Home2() {
               <i>
                 <b className="purple"> Javascript and Java. </b>
               </i>
+              ainsi que de nombreuese méthode de cheferie de projet.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              J'ai un attrait envers les nouvelles tecchnologie et j'aime tout particulierement
+              apprendre de nouvelle choses bien que  &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="purple">la programmation </b> sois mon domaine 
+                de prelidection j'ai un attrait tout particulier sur ce qui touche a la {" "}
                 <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
+                chefferie de projet et au managment.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js </b>
-              </i>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -65,7 +55,7 @@ function Home2() {
               <span className="purple">connectez-vous </span> avec moi
             </p>
             <ul className="home-about-social-links">
-              <li className="social-icons">
+              {/* <li className="social-icons">
                 <a
                   href="https://github.com/soumyajit4419"
                   target="_blank"
@@ -74,10 +64,10 @@ function Home2() {
                 >
                   <AiFillGithub />
                 </a>
-              </li>
+              </li> */}
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://twitter.com/CailletQuentin"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,7 +77,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/qcaillet/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +87,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
+                  href="https://www.instagram.com/cailletquentin/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

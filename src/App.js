@@ -6,6 +6,8 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import Games from "./components/Games/Games";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "./App.css";
@@ -32,9 +34,10 @@ function App() {
         <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/project" component={Projects} />
+          {/* <Route path="/project" component={Projects} /> */}
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />
+          <Route path="/games" component={Games} />
         </Switch>
         <Footer />
       </div>
