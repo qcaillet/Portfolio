@@ -3,9 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Type from "../Games/Type";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import homeLogo from "../../Assets/game.png";
+import homeLogo from "../../Assets/game1.png";
 import Game2 from "./Game2";
 import GameCards from "./GameCards";
+import TypeComming from "./TypeComing";
 
 function Games() {
   return (
@@ -16,7 +17,7 @@ function Games() {
           <Row>
             <Col md={7} className="home-header">
               <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
+                <TypeComming />
               </div>
             </Col>
 
@@ -26,10 +27,10 @@ function Games() {
           </Row>
         </Container>
       </Container>
-      <Game2 />
+      {/* <Game2 />
       <Col md={4} className="project-card">
       <GameCards title="Résulat" description="sdfvsdfvs" link="http://localhost:3001/" />
-      </Col>
+      </Col> */}
     </section>
   );
 }
