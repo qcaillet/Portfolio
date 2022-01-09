@@ -13,7 +13,6 @@ import {
 
 import { FaEthereum } from "react-icons/fa";
 import { SiDocker } from "react-icons/si";
-import Tooltip from "react-bootstrap/Tooltip";
 import TooltipSkills from "./Tooltip";
 
 function Techstack() {
