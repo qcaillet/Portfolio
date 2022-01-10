@@ -4,6 +4,8 @@ import Particle from "../Particle";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import homeLogo from "../../Assets/game1.png";
 import TypeComming from "./TypeComing";
+import GameCards from "./GameCards";
+import Game2 from "./Game2";
 
 function Games() {
   return (
@@ -24,10 +26,10 @@ function Games() {
           </Row>
         </Container>
       </Container>
-      {/* <Game2 />
+      <Game2 />
       <Col md={4} className="project-card">
-      <GameCards title="Résulat" description="sdfvsdfvs" link="http://localhost:3001/" />
-      </Col> */}
+      <GameCards title="Résulat" description="veuillez rentrer votre résultat ci-dessous" />
+      </Col>
     </section>
   );
 }

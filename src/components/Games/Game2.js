@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-
 import { MdOutlineExplore } from "react-icons/md";
 
 function Game2() {
