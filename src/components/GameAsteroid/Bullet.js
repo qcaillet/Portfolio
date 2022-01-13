@@ -19,30 +19,30 @@ export default class Bullet {
     this.delete = true;
   }
 
-  // render(state){
-  //   // Move
-  //   this.position.x += this.velocity.x;
-  //   this.position.y += this.velocity.y;
+  render(state){   
+    // Move
+    this.position.x += this.velocity.x;
+    this.position.y += this.velocity.y;
 
-  //   // Delete if it goes out of bounds
-  //   if ( this.position.x < 0
-  //     || this.position.y < 0
-  //     || this.position.x > state.screen.width
-  //     || this.position.y > state.screen.height ) {
-  //       this.destroy();
-  //   }
+    // Delete if it goes out of bounds
+    if ( this.position.x < 0
+      || this.position.y < 0
+      || this.position.x > state.screen.width
+      || this.position.y > state.screen.height ) {
+        this.destroy();
+    }
 
-  //   // Draw
-  //   const context = state.context;
-  //   context.save();
-  //   context.translate(this.position.x, this.position.y);
-  //   context.rotate(this.rotation * Math.PI / 180);
-  //   context.fillStyle = '#FFF';
-  //   context.lineWidth = 0,5;
-  //   context.beginPath();
-  //   context.arc(0, 0, 2, 0, 2 * Math.PI);
-  //   context.closePath();
-  //   context.fill();
-  //   context.restore();
-  // }
+    // Draw
+    const context = state.context;
+    context.save();
+    context.translate(this.position.x, this.position.y);
+    context.rotate(this.rotation * Math.PI / 180);
+    context.fillStyle = '#FFF';
+    context.lineWidth = 0.5;
+    context.beginPath();
+    context.arc(0, 0, 2, 0, 2 * Math.PI);
+    context.closePath();
+    context.fill();
+    context.restore();
+  }
 }

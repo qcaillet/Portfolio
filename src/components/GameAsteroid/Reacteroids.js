@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Ship from './Ship';
 import Asteroid from './Asteroid';
-import { randomNumBetweenExcluding } from './helpers'
+import { randomNumBetweenExcluding } from './helpers';
 
 const KEY = {
   LEFT:  37,
@@ -81,8 +81,8 @@ export class Reacteroids extends Component {
 
   update() {
     const context = this.state.context;
-    const keys = this.state.keys;
-    const ship = this.ship[0];
+    // const keys = this.state.keys;
+    // const ship = this.ship[0];
 
     context.save();
     context.scale(this.state.screen.ratio, this.state.screen.ratio);
@@ -161,7 +161,7 @@ export class Reacteroids extends Component {
   }
 
   generateAsteroids(howMany){
-    let asteroids = [];
+    // let asteroids = [];
     let ship = this.ship[0];
     for (let i = 0; i < howMany; i++) {
       let asteroid = new Asteroid({
@@ -253,7 +253,7 @@ export class Reacteroids extends Component {
           Use [A][S][W][D] or [←][↑][↓][→] to MOVE<br/>
           Use [SPACE] to SHOOT
         </span>
-        <canvas ref="canvas"
+        <canvas className="canvas" ref="canvas"
           width={this.state.screen.width * this.state.screen.ratio}
           height={this.state.screen.height * this.state.screen.ratio}
         />

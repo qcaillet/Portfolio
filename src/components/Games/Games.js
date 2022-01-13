@@ -19,7 +19,6 @@ function Games() {
                 <TypeComming />
               </div>
             </Col>
-
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img src={homeLogo} alt="home pic" className="img-fluid" />
             </Col>
@@ -28,7 +27,10 @@ function Games() {
       </Container>
       <Game2 />
       <Col md={4} className="project-card">
-      <GameCards title="Résulat" description="veuillez rentrer votre résultat ci-dessous" />
+        <GameCards
+          title="Résulat"
+          description="veuillez rentrer votre résultat ci-dessous"
+        />
       </Col>
     </section>
   );

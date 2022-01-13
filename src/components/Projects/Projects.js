@@ -9,6 +9,7 @@
 // import chatify from "../../Assets/Projects/chatify.png";
 // import suicide from "../../Assets/Projects/suicide.png";
 // import bitsOfCode from "../../Assets/Projects/blog.png";
+//import css
 
 // function Projects() {
 //   return (

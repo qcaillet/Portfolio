@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { GrValidate } from "react-icons/gr";
-import { Link } from "react-router-dom";
-import { Redirect } from 'react-router';
-
 
 class GamesCards extends React.Component {
   constructor(props) {
@@ -49,12 +46,10 @@ class GamesCards extends React.Component {
 
     //Test de mon input res correct ou non
     if (this.state.response === "correct") {
-      alert("response correcte");
+      window.open("http://localhost:3000/game-asteroids");
     } else if (errors.length > 0) {
       return false;
     } else {
-      //redirection
-      this.push("/about")   
       alert("reponse incorecte veuillez retenter votre chance !");
     }
   }
@@ -81,9 +76,9 @@ class GamesCards extends React.Component {
             onChange={this.handleInputChange}
             placeholder="Entrer votre reponse"
           />
-          <Button variant="primary" onClick={this.handleSubmit} target="_blank">
+           <Button variant="primary" onClick={this.handleSubmit} target="_blank">
             <GrValidate />
-            Valider
+            &nbsp;Valider
           </Button>
         </Card.Body>
       </Card>

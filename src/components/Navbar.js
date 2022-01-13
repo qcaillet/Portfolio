@@ -77,19 +77,6 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item> */}
 
-             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/game-asteroids"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                gameaster
-              </Nav.Link>
-            </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
