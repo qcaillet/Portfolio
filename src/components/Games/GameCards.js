@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { GrValidate } from "react-icons/gr";
+import { GiConfirmed } from "react-icons/gi";
 
 class GamesCards extends React.Component {
   constructor(props) {
@@ -42,10 +42,11 @@ class GamesCards extends React.Component {
 
     this.setState({
       errors: errors,
+      response: "",
     });
 
     //Test de mon input res correct ou non
-    if (this.state.response === "correct") {
+    if (this.state.response === "42") {
       window.open("http://localhost:3000/game-asteroids");
     } else if (errors.length > 0) {
       return false;
@@ -59,25 +60,20 @@ class GamesCards extends React.Component {
       <Card className="project-card-view">
         <Card.Header>
           <Card.Title>{this.props.title}</Card.Title>
-          <Card.Text style={{ textAlign: "justify" }}>
-            {this.props.description}
-          </Card.Text>
         </Card.Header>
         <Card.Body className="card-game">
           <input
             autoComplete="off"
             className={
-              this.hasError("response")
-                ? "form-control is-invalid"
-                : "form-control"
+              this.hasError("response") ? "control  is-invalid" : "control"
             }
             name="response"
             value={this.state.response}
             onChange={this.handleInputChange}
             placeholder="Entrer votre reponse"
           />
-           <Button variant="primary" onClick={this.handleSubmit} target="_blank">
-            <GrValidate />
+          <Button variant="primary" onClick={this.handleSubmit} target="_blank">
+            <GiConfirmed />
             &nbsp;Valider
           </Button>
         </Card.Body>

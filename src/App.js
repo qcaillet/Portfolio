@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Games from "./components/Games/Games";
 import Reacteroids from "./components/GameAsteroid/Reacteroids";
-// import style from "./components/GameAsteroid/style-game.css";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";

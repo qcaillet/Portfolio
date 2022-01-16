@@ -6,13 +6,7 @@ function TypeComming() {
     <Typewriter
       options={{
         strings: [
-          "Bientôt disponible !",
-          "Coming soon !",
-          "próximamente !",
-          "kommt bald !",
-          "Вскоре !",
-          "近日公開 !"
-          
+          "Bienvenue et bonne chance !",        
         ],
         autoStart: true,
         loop: true,
