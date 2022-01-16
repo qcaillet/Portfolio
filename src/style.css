@@ -752,6 +752,12 @@ html {
 .card-game {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+button.button-resultat.btn.btn-primary {
+  align-items: center;
+  display: flex;
 }
 
 .control {
