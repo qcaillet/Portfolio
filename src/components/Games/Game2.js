@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-
 import { MdOutlineExplore } from "react-icons/md";
+import GameCards from "../Games/GameCards";
 
 function Game2() {
   return (
@@ -12,10 +12,15 @@ function Game2() {
             PRRÊT A <span className="purple">JOUER ?</span>
           </h1>
           <p className="home-about-body">
-            Dans ce jeux vous devrez résoudre une suite d'égnime ecrite
-            ci-dessous. Chaque egnime est independente des une des autres. Une
-            fois toute les egnime resolus vous obtiendrer un code qui vous
-            permeteera d'acceder a l'element cacher de se site.
+            Dans ce jeu vous devrez résoudre une suite d'énigmes. Chaque énigme
+            peut être résolut indépendamment dès une des autres. Les quatre premières
+            énigmes vous permettront de résoudre la dernière. C'est donc le
+            résultat de la dernière énigme qui vous permettra d'accéder à
+            l'élément caché de ce site. 
+            {/* Vous disposer de 5 essais si toutefois
+            au bout des 5 fois vous ne parvenez toujours pas à trouver le bon
+            résultat une icône s'affichera pour vous aider dans la boite de
+            dialogue. */}
             <br />
             <br />
             Bonne chance !
@@ -24,24 +29,35 @@ function Game2() {
             </span>
             <br />
             <br />
-            Si vous etes arriver jusqu'ici c'est que vous etes pret a vous
-            lancer dans le grand bain et a découvrire se que cache réllement se
-            site. Treve de bavarder et commencons &nbsp;
+            Si vous êtes arrivé jusqu'ici, c'est que vous êtes prêt à vous lancer
+            dans le grand bain et à découvrir ce que cache réellement ce site.
+            Trêve de bavarder et commençons &nbsp; <br />
+            <br />
             <ul>
               <li className="about-activity">
-                <MdOutlineExplore /> egnime 1
+                <MdOutlineExplore /> Je suis l'ensemble de tout ce qui existe,
+                qui suis-je ?
               </li>
               <li className="about-activity">
-                <MdOutlineExplore /> egnime 2
+                <MdOutlineExplore /> Je suis moi-même une interrogation. Je suis
+                lié à l'existence, l'origine, la nature ou encore la finalité,
+                qui suis-je ?
               </li>
               <li className="about-activity">
-                <MdOutlineExplore /> egnime 3
+                <MdOutlineExplore /> Je suis une oeuvre de science-fiction
+                humoristique qui se passe dans l'espace, et j'ai été écrite par un
+                Britannique, qui suis-je ?
               </li>
               <li className="about-activity">
-                <MdOutlineExplore /> egnime 4
+                <MdOutlineExplore /> Je suis connu pour atteindre les meilleurs
+                performances possibles, notamment sur les vitesses de calcul, qui
+                suis-je ?
               </li>
               <li className="about-activity">
-                <MdOutlineExplore /> egnime 5
+                <span className="purple">
+                  <MdOutlineExplore /> Je suis un nombre, je suis la réponse à
+                  toutes les questions précédente, qui suis-je ?{" "}
+                </span>
               </li>
             </ul>
           </p>
@@ -52,6 +68,9 @@ function Game2() {
           </Tilt>
         </Col> */}
       </Row>
+      <Col md={5} className="project-card">
+        <GameCards title="Résulat" />
+      </Col>
     </Container>
   );
 }
