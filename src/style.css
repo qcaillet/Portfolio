@@ -754,6 +754,11 @@ html {
   justify-content: space-between;
 }
 
+button.button-resultat.btn.btn-primary {
+  align-items: center;
+  display: flex;
+}
+
 .control {
   display: block;
   /* width: 100%; */

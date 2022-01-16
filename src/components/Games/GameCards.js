@@ -88,7 +88,7 @@ class GamesCards extends React.Component {
             placeholder="Entrer votre reponse"
           />
           <h1>{this.state.nb}</h1>
-          <Button variant="primary" onClick={this.handleSubmit} target="_blank">
+          <Button variant="primary" onClick={this.handleSubmit} className="button-resultat" target="_blank">
             <GiConfirmed />
             &nbsp;Valider
           </Button>
