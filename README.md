@@ -8,11 +8,8 @@
 Ce projet a été construit en utilisant ces technologies.
 
 - React.js
-- Node.js
-- Express.js
 - CSS3
 - VsCode
-- Vercel
 
 ## 🛠 Installation and Setup Instructions
 
