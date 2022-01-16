@@ -887,3 +887,29 @@ svg.fa.fa-arrow-down.fa-2x {
     transform: translateY(-15px);
   }
 }
+
+svg.help {
+  display: flex;
+  margin-left: auto;
+}
+
+@keyframes bounceHelp {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-7px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+.bounceHelp {
+  -moz-animation: bounceHelp 2s infinite;
+  -webkit-animation: bounceHelp 2s infinite;
+  animation: bounceHelp 2s infinite;
+}

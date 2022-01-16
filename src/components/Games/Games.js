@@ -4,7 +4,6 @@ import Particle from "../Particle";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import homeLogo from "../../Assets/game1.png";
 import TypeComming from "./TypeComing";
-import GameCards from "./GameCards";
 import Game2 from "./Game2";
 import { HiChevronDoubleDown } from "react-icons/hi";
 
