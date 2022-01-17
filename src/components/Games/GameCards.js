@@ -20,7 +20,6 @@ class GamesCards extends React.Component {
   }
 
   hasError(key) {
-    // this.setState({count: this.setState.count})
     return this.state.errors.indexOf(key) !== -1;
   }
 
