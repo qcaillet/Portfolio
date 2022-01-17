@@ -2,8 +2,9 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { GiConfirmed } from "react-icons/gi";
-// import {BiHelpCircle} from "react-icons/bi"
-// import TooltipSkills from "../About/Tooltip";
+import { BiHelpCircle } from "react-icons/bi";
+import TooltipSkills from "../About/Tooltip";
+import { style } from "dom-helpers";
 
 class GamesCards extends React.Component {
   constructor(props) {
@@ -37,7 +38,7 @@ class GamesCards extends React.Component {
     obj[key] = value;
     this.setState(obj);
   }
-
+  
   handleSubmit(event) {
     event.preventDefault();
     //VALIDATE
@@ -62,18 +63,26 @@ class GamesCards extends React.Component {
       return false;
     } else {
       count = this.state.count + 1;
-      if(count === 5 || count > 5){
-        console.log("ok");
+      if (count === 5 || count > 5) {
+        
       }
       alert("Réponse incorrecte veuillez retenter votre chance !");
     }
   }
 
   render() {
+    if (this.state.count >= 3){
+      var res = true;
+    }
     return (
       <Card className="project-card-view">
         <Card.Header>
-        {/* <TooltipSkills text="veuillez entrer “the answer to life, the universe and everything“ sur google et vous obtiendrez la réponse 😉" ></TooltipSkills> */}
+          <div className={res ? "show": "hidden"}>
+            <TooltipSkills 
+              text="veuillez entrer “the answer to life, the universe and everything“ sur google et vous obtiendrez la réponse 😉"
+              icon={<BiHelpCircle className=" help bounceHelp" />}
+            ></TooltipSkills>
+          </div>
           <Card.Title>{this.props.title}</Card.Title>
         </Card.Header>
         <Card.Body className="card-game">
@@ -88,7 +97,12 @@ class GamesCards extends React.Component {
             placeholder="Entrer votre reponse"
           />
           <h1>{this.state.nb}</h1>
-          <Button variant="primary" onClick={this.handleSubmit} className="button-resultat" target="_blank">
+          <Button
+            variant="primary"
+            onClick={this.handleSubmit}
+            className="button-resultat"
+            target="_blank"
+          >
             <GiConfirmed />
             &nbsp;Valider
           </Button>

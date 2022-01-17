@@ -753,6 +753,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 button.button-resultat.btn.btn-primary {
@@ -919,3 +920,10 @@ svg.help {
   -webkit-animation: bounceHelp 2s infinite;
   animation: bounceHelp 2s infinite;
 }
+
+.hidden{
+visibility: hidden;
+}
+.show{
+  visibility: visible;
+  }
