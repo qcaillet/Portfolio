@@ -4,7 +4,6 @@ import Button from "react-bootstrap/Button";
 import { GiConfirmed } from "react-icons/gi";
 import { BiHelpCircle } from "react-icons/bi";
 import TooltipSkills from "../About/Tooltip";
-import { style } from "dom-helpers";
 
 class GamesCards extends React.Component {
   constructor(props) {
@@ -21,13 +20,8 @@ class GamesCards extends React.Component {
   }
 
   hasError(key) {
+    // this.setState({count: this.setState.count})
     return this.state.errors.indexOf(key) !== -1;
-  }
-
-  increment() {
-    this.setState({
-      count: this.state.count + 1,
-    });
   }
 
   //fonction update inputs
@@ -38,12 +32,11 @@ class GamesCards extends React.Component {
     obj[key] = value;
     this.setState(obj);
   }
-  
+
   handleSubmit(event) {
     event.preventDefault();
     //VALIDATE
     var errors = [];
-    var count = 0;
 
     //response
     if (this.state.response === "") {
@@ -53,32 +46,27 @@ class GamesCards extends React.Component {
     this.setState({
       errors: errors,
       response: "",
-      count: this.state.count + 1,
     });
 
-    //Test de mon input res correct ou non
     if (this.state.response === "42") {
       window.open("http://localhost:3000/game-asteroids");
     } else if (errors.length > 0) {
       return false;
     } else {
-      count = this.state.count + 1;
-      if (count === 5 || count > 5) {
-        
-      }
+      this.setState({ count: this.state.count + 1 });
       alert("Réponse incorrecte veuillez retenter votre chance !");
     }
   }
 
   render() {
-    if (this.state.count >= 3){
+    if (this.state.count >= 3 || (this.state.count >=3 && this.hasError("response"))) {
       var res = true;
     }
     return (
       <Card className="project-card-view">
         <Card.Header>
-          <div className={res ? "show": "hidden"}>
-            <TooltipSkills 
+          <div className={res ? "show" : "hidden"}>
+            <TooltipSkills
               text="veuillez entrer “the answer to life, the universe and everything“ sur google et vous obtiendrez la réponse 😉"
               icon={<BiHelpCircle className=" help bounceHelp" />}
             ></TooltipSkills>

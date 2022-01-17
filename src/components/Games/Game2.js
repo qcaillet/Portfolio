@@ -17,10 +17,10 @@ function Game2() {
             énigmes vous permettront de résoudre la dernière. C'est donc le
             résultat de la dernière énigme qui vous permettra d'accéder à
             l'élément caché de ce site. 
-            {/* Vous disposer de 5 essais si toutefois
-            au bout des 5 fois vous ne parvenez toujours pas à trouver le bon
+            Vous disposer de 5 essais si toutefois
+            au bout des trois fois vous ne parvenez toujours pas à trouver le bon
             résultat une icône s'affichera pour vous aider dans la boite de
-            dialogue. */}
+            dialogue.
             <br />
             <br />
             Bonne chance !
