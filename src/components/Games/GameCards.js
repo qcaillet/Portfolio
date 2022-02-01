@@ -48,7 +48,10 @@ class GamesCards extends React.Component {
     });
 
     if (this.state.response === "42") {
-      window.open("https://cailletquentin-portfolio.netlify.app/gameAsteroids");
+     // window.open("https://cailletquentin-portfolio.netlify.app/gameAsteroids");
+      let url = "https://cailletquentin-portfolio.netlify.app/gameAsteroids",
+    const history = useHistory();
+    history.push(url);
     } else if (errors.length > 0) {
       return false;
     } else {
