@@ -4,7 +4,6 @@ import Button from "react-bootstrap/Button";
 import { GiConfirmed } from "react-icons/gi";
 import { BiHelpCircle } from "react-icons/bi";
 import TooltipSkills from "../About/Tooltip";
-import { useHistory } from "react-router-dom";
 
 class GamesCards extends React.Component {
   constructor(props) {
