@@ -16,7 +16,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from "./components/ScrollToTop";
 const App = () => {
   const [load, upadateLoad] = useState(true);
-  const atGame = window.location.pathname.includes("game-asteroids");
+  const atGame = window.location.pathname.includes("gameAsteroids");
   // fonction qui recupere ? pour proteger la route return un boolean
   Games();
 
@@ -41,7 +41,7 @@ const App = () => {
           <Route path="/game" component={Games} />
           {/* protection de la route  */}
           {/* {Games ( */}
-          <Route path="/game-asteroids" component={Reacteroids} />
+          <Route path="/gameAsteroids" component={Reacteroids} />
           {/* )} */}
         </Switch>
         {!atGame && <Footer />}
