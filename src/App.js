@@ -8,7 +8,7 @@ import Resume from "./components/Resume/ResumeNew";
 import Games from "./components/Games/Games";
 import Reacteroids from "./components/GameAsteroid/Reacteroids";
 
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
