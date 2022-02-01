@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import { GiConfirmed } from "react-icons/gi";
 import { BiHelpCircle } from "react-icons/bi";
 import TooltipSkills from "../About/Tooltip";
+import { useHistory } from "react-router-dom";
 
 class GamesCards extends React.Component {
   constructor(props) {
@@ -48,10 +49,9 @@ class GamesCards extends React.Component {
     });
 
     if (this.state.response === "42") {
+      let history = useHistory();
      // window.open("https://cailletquentin-portfolio.netlify.app/gameAsteroids");
-      let url = "https://cailletquentin-portfolio.netlify.app/gameAsteroids",
-    const history = useHistory();
-    history.push(url);
+      history.push("https://cailletquentin-portfolio.netlify.app/gameAsteroids");
     } else if (errors.length > 0) {
       return false;
     } else {
