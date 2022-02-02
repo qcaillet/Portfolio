@@ -247,7 +247,7 @@ export class Reacteroids extends Component {
     }
 
     if (!this.state.inGame) {
-      endgame = (
+      endgame = ( 
         <div className="endgame">
           <p>Game over !</p>
           <p>{message}</p>
@@ -255,28 +255,29 @@ export class Reacteroids extends Component {
         </div>
       );
     }
+
     return (
-      <div>
-        {endgame}
-        <span className="score current-score">
-          Score: {this.state.currentScore}
-        </span>
-        <span className="score top-score">
-          Top Score: {this.state.topScore}
-        </span>
-        <span className="controls">
-          Use [Q][Z][D] or [←][↑][→] to MOVE
-          <br />
-          Use [SPACE] to SHOOT
-        </span>
-        <canvas
-          className="canvas"
-          ref="canvas"
-          width={this.state.screen.width * this.state.screen.ratio}
-          height={this.state.screen.height * this.state.screen.ratio}
-        />
-        <Particle />
-      </div>
+        <div>
+          {endgame}
+          <span className="score current-score">
+            Score: {this.state.currentScore}
+          </span>
+          <span className="score top-score">
+            Top Score: {this.state.topScore}
+          </span>
+          <span className="controls">
+            Use [Q][Z][D] or [←][↑][→] to MOVE
+            <br />
+            Use [SPACE] to SHOOT
+          </span>
+          <canvas
+            className="canvas"
+            ref="canvas"
+            width={this.state.screen.width * this.state.screen.ratio}
+            height={this.state.screen.height * this.state.screen.ratio}
+          />
+              <Particle />
+        </div>
     );
   }
 }
