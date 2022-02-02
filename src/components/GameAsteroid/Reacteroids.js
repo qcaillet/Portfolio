@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import Ship from "./Ship";
-import Asteroid from "./Asteroid";
-import { randomNumBetweenExcluding } from "./helpers";
-import Particle from "../Particle";
+import React from "react";
+// import Ship from "./Ship";
+// import Asteroid from "./Asteroid";
+// import { randomNumBetweenExcluding } from "./helpers";
+// import Particle from "../Particle";
 
 const KEY = {
   LEFT: 37,
@@ -15,9 +15,11 @@ const KEY = {
 };
 
 function Reacteroids() {
-  return(
-    <div><h1>TEST</h1></div>
-  )
+  return (
+    <div>
+      <h1>TEST</h1>
+    </div>
+  );
   // constructor() {
   //   super();
   //   this.state = {
@@ -250,7 +252,7 @@ function Reacteroids() {
   //   }
 
   //   if (!this.state.inGame) {
-  //     endgame = ( 
+  //     endgame = (
   //       <div className="endgame">
   //         <p>Game over !</p>
   //         <p>{message}</p>

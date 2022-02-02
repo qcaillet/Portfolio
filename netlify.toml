@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/game/"
-  to = "https://cailletquentin-portfolio.netlify.app/gameAsteroids"
-  status = 301
-  force = true
