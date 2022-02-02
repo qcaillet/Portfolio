@@ -4,15 +4,15 @@ import React from "react";
 // import { randomNumBetweenExcluding } from "./helpers";
 // import Particle from "../Particle";
 
-const KEY = {
-  LEFT: 37,
-  RIGHT: 39,
-  UP: 38,
-  D: 68,
-  Q: 81,
-  Z: 90,
-  SPACE: 32,
-};
+// const KEY = {
+//   LEFT: 37,
+//   RIGHT: 39,
+//   UP: 38,
+//   D: 68,
+//   Q: 81,
+//   Z: 90,
+//   SPACE: 32,
+// };
 
 function Reacteroids() {
   return (
