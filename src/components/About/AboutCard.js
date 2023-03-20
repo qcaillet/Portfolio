@@ -50,9 +50,6 @@ function AboutCard() {
               <ImPointRight /> Cuisiner
             </li>
             <li className="about-activity">
-              <ImPointRight /> Moto
-            </li>
-            <li className="about-activity">
               <ImPointRight /> Blockcahin/Cryptoactif
             </li>
           </ul>
