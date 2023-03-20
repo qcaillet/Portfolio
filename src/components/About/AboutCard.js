@@ -16,7 +16,7 @@ function AboutCard() {
             <span className="purple">chefferie de projet et du management</span>.
             La chefferie de projet et le management m'animent depuis bientôt{" "}
             <span className="purple"> 3 ans</span>.
-            En effet durant ses 3 dernières années de par mes études que je
+            En effet durant ses 4 dernières années de par mes études que je
             réalise en<span className="purple"> alternance, </span>j'ai pu allier
             chefferie de projet et programmation. L'alternance ma permit de mêttre{" "}
             toutes les{" "}
@@ -56,11 +56,6 @@ function AboutCard() {
               <ImPointRight /> Blockcahin/Cryptoactif
             </li>
           </ul>
-
-          <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>
-            "Efforcez-vous de construire des choses qui font la différence"{" "}
-          </p>
-          <footer className="blockquote-footer">Quentin</footer>
         </blockquote>
       </Card.Body>
     </Card>

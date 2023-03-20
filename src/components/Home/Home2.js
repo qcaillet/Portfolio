@@ -24,7 +24,7 @@ function Home2() {
               <br />
               Je maitrise les langages
               <i>
-                <b className="purple"> Javascript and Java. </b>
+                <b className="purple"> Javascript et Java. </b>
               </i>
               ainsi que de nombreuses méthodes de chefferie de projet.
               <br />
