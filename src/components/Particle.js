@@ -16,8 +16,11 @@ function Particle() {
 const particlesLoaded = useCallback(async container => {
     await console.log(container);
 }, []);
+
   return (
     <Particles
+    init={particlesInit}
+            loaded={particlesLoaded}
     params={{
       particles: {
         number: {
