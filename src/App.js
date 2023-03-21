@@ -8,7 +8,7 @@ import Resume from "./components/Resume/ResumeNew";
 import Games from "./components/Games/Games";
 import Reacteroids from "./components/GameAsteroid/Reacteroids";
 
-import { BrowserRouter  as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter , Route, Routes } from "react-router-dom";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -29,24 +29,24 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <BrowserRouter>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         {!atGame && <Navbar />}
         <ScrollToTop />
         <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/game" component={Games} />
+          <Route path="/" exact Component={Home} />
+          <Route path="/about" Component={About} />
+          <Route path="/resume" Component={Resume} />
+          <Route path="/game" Component={Games} />
           {/* protection de la route  */}
           {/* {Games ( */}
-          <Route path="/gameAsteroids" component={Reacteroids} />
+          <Route path="/gameAsteroids" element={Reacteroids} />
           {/* )} */}
         </Routes>
         {!atGame && <Footer />}
       </div>
-    </Router>
+    </BrowserRouter>
   );
 };
 

@@ -15,7 +15,7 @@ function AboutCard() {
             s'oriente vers de la{" "}
             <span className="purple">chefferie de projet et du management</span>.
             La chefferie de projet et le management m'animent depuis bientôt{" "}
-            <span className="purple"> 3 ans</span>.
+            <span className="purple"> 4 ans</span>.
             En effet durant ses 4 dernières années de par mes études que je
             réalise en<span className="purple"> alternance, </span>j'ai pu allier
             chefferie de projet et programmation. L'alternance ma permit de mêttre{" "}
