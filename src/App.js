@@ -41,7 +41,7 @@ const App = () => {
           <Route path="/game" Component={Games} />
           {/* protection de la route  */}
           {/* {Games ( */}
-          <Route path="/gameAsteroids" element={Reacteroids} />
+          {/* <Route path="/gameAsteroids" element={Reacteroids} /> */}
           {/* )} */}
         </Routes>
         {!atGame && <Footer />}

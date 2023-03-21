@@ -87,7 +87,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                  as={Link}
                  to="/game"
@@ -95,7 +95,7 @@ function NavBar() {
               >
                 <IoLogoGameControllerB style={{ marginBottom: "2px" }} /> Games
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item className="fork-btn">
               {/* <Button
