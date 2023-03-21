@@ -33,6 +33,7 @@ function Game2() {
             dans le grand bain et à découvrir ce que cache réellement ce site.
             Trêve de bavarder et commençons &nbsp; <br />
             <br />
+            </p>
             <ul>
               <li className="about-activity">
                 <MdOutlineExplore /> Je suis l'ensemble de tout ce qui existe,
@@ -60,7 +61,6 @@ function Game2() {
                 </span>
               </li>
             </ul>
-          </p>
         </Col>
         {/* <Col md={4} className="myAvtar">
           <Tilt>

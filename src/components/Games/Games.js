@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+
 import homeLogo from "../../Assets/game1.png";
 import TypeComming from "./TypeComing";
 import Game2 from "./Game2";
@@ -21,7 +22,7 @@ function Games() {
               </div>
               <p className="textSlide">Glisse vers le bas</p>
               <div className="arrow bounce">
-               <HiChevronDoubleDown class="fa fa-arrow-down fa-2x" />
+               <HiChevronDoubleDown className="fa fa-arrow-down fa-2x" />
                 </div>
             </Col>
             <Col md={5} style={{ paddingBottom: 20 }}>
