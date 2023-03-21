@@ -6,7 +6,6 @@ import About from "./components/About/About";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Games from "./components/Games/Games";
-import Reacteroids from "./components/GameAsteroid/Reacteroids";
 
 import { BrowserRouter , Route, Routes } from "react-router-dom";
 import "./style.css";
