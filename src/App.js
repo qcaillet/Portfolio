@@ -8,7 +8,7 @@ import Resume from "./components/Resume/ResumeNew";
 import Games from "./components/Games/Games";
 import Reacteroids from "./components/GameAsteroid/Reacteroids";
 
-import { BrowserRouter  as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter  as Router, Route, Routes } from "react-router-dom";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -34,7 +34,7 @@ const App = () => {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         {!atGame && <Navbar />}
         <ScrollToTop />
-        <Switch>
+        <Routes>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />
@@ -43,7 +43,7 @@ const App = () => {
           {/* {Games ( */}
           <Route path="/gameAsteroids" component={Reacteroids} />
           {/* )} */}
-        </Switch>
+        </Routes>
         {!atGame && <Footer />}
       </div>
     </Router>
